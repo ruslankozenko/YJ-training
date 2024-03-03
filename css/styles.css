@@ -187,6 +187,58 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
 /* ============== /MOBILE HERO ============== */
 
+/* ============== MOBILE ABOUT ============== */
+
+.about {
+    max-width: 335px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-conteiner {
+    background: #fbfbfb;
+    padding: 40px 20px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #1b414b;
+     margin-bottom: 40px;
+}
+
+.about-text-info {
+    font-weight: 400;
+    font-size: 18px; 
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #1b414b;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: -0.02em;
+    color: #040306;
+    opacity: 0.4;
+    margin-bottom: 40px;
+}
+
+.about-photo {
+    border-radius: 24px 24px 0 0;
+    margin-top: -40px;
+}
+
+/* ============== /MOBILE ABOUT ============== */
+
 @media screen and (min-width: 768px) {
 
     .mobile-menu-open-btn {
@@ -313,6 +365,38 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     }
 
         /* ============== /TABLET HERO ============== */
+
+        /* ============== TABLET ABOUT ============== */
+    
+    .about {
+        max-width: 704px;
+    }
+    
+    .about-conteiner {
+        padding: 50px 136px 50px 32px;
+    }
+
+    .about-title {
+        font-size: 48px;
+        margin-bottom: 50px;
+    }
+     
+    .about-description {
+        width: 389px;
+        margin-right: auto;
+    }
+    
+    .about-text-info {
+        font-size: 23px;
+    }
+
+    .about-text {
+        font-size: 13px;
+        line-height: 1.15;
+        margin-bottom: 50px;
+    }
+
+        /* ============== /TABLET ABOUT ============== */
 }
 
 @media screen and (min-width: 1280px) {
@@ -362,6 +446,32 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     }
 
     /* ============== /DESKTOP HERO ============== */
+
+    /* ============== DESKTOP ABOUT ============== */
+
+    .about {
+        max-width: 1180px;
+    }
+
+    .about-conteiner {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 50px;
+        gap: 189px;
+    }
+
+    .about-title {
+        width: 537px;
+    }
+
+    .about-description {
+        width: 354px;
+       
+    }
+
+
+    /* ============== /DESKTOP ABOUT ============== */
 }
 
 @media screen and (min-width: 1440px) {
@@ -394,4 +504,22 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
                     url(../images/hero/hero-desk-big@2x.jpg);
             }
         }
+
+        /* ============== /DESKTOP HERO ============== */
+
+        /* ============== DESKTOP ABOUT ============== */
+
+        .about {
+            max-width: 1340px;
+        }
+
+        .about-conteiner {
+            gap: 299px;
+        }
+
+        .about-description {
+            width: 404px;
+        }
+
+        /* ============== /DESKTOP ABOUT ============== */
 }
