@@ -194,15 +194,18 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     }
 
     .page-header {
-        max-width: 704px;   
+        max-width: 704px;
+        margin: auto;
+        top: 32px;   
     }
 
     .container-header {
         height: 48px;
+        padding: 14px 28px;
     }
 
     .logo-header {
-        padding-left: 28px;
+
         font-size: 20px;
     }
 
@@ -240,7 +243,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     }
 
     .page-navigation {
-        width: 480px;
+        width: 460px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -250,7 +253,6 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     .header-social-list {
         display: flex;
         gap: 8px;
-        padding-right: 30px;
         height: 24px;
     }
 
@@ -270,8 +272,9 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     /* ============== TABLET HERO ============== */
 
     .hero {
-        min-width: 768px;
-        background-image: url(../images/hero/hero-tab.jpg);
+        max-width: 768px;
+        background-image: linear-gradient(to top, rgba(17, 19, 31, 0.8), rgba(17, 19, 31, 0.31), rgba(17, 19, 31, 0)),
+        url(../images/hero/hero-tab.jpg);
 
     }
 
@@ -283,6 +286,33 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
                     url(../images/hero/hero-tab@2x.jpg);
             }
         }
+
+    .conteiner-hero {
+        padding: 0px 32px;
+    }    
+
+    .main-title {
+        font-size: 70px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+        line-height: 1.4;
+        margin-bottom: 48px;
+    }
+
+    .hero-link-send {
+        padding: 16px 40px;
+        width: 179px;
+        height: 52px;
+    }
+
+    .hero-sending {
+        font-size: 18px;
+        line-height: 1.1;
+    }
+
+        /* ============== /TABLET HERO ============== */
 }
 
 @media screen and (min-width: 1280px) {
@@ -297,6 +327,41 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     .logo-header {
         padding-left: 30px;
     }
+
+    /* ============== /DESKTOP HEADER ============== */
+
+    /* ============== DESKTOP HERO ============== */
+
+    .hero {
+        max-width: 1280px;
+        background-image: linear-gradient(to top, rgba(17, 19, 31, 0.8),
+                rgba(17, 19, 31, 0.31),
+                rgba(17, 19, 31, 0)),
+                url(../images/hero/hero-desk.jpg);
+    }
+
+        @media screen and (min-resolution: 192dpi) and (max-width: 1439px),
+        screen and (min-resolution: 2dppx) and (max-width: 1439px),
+        screen and (min-device-pixel-ratio: 2) and (max-width: 1439px) {
+            .hero {
+                background-image: linear-gradient(to top, rgba(17, 19, 31, 0.8), rgba(17, 19, 31, 0.31), rgba(17, 19, 31, 0)),
+                    url(../images/hero/hero-desk@2x.jpg);
+            }
+        }
+
+    .conteiner-hero {
+        padding: 0px 140px;
+    }
+    
+    .main-title {
+        font-size: 80px;
+    }
+
+    .hero-text {
+        width: 597px;
+    }
+
+    /* ============== /DESKTOP HERO ============== */
 }
 
 @media screen and (min-width: 1440px) {
@@ -308,4 +373,25 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     .page-navigation {
         width: 750px;
     }
+
+    /* ============== /DESKTOP HEADER ============== */
+
+    /* ============== DESKTOP HERO ============== */
+
+    .hero {
+        max-width: 1440px;
+        background-image: linear-gradient(to top, rgba(17, 19, 31, 0.8),
+                    rgba(17, 19, 31, 0.31),
+                    rgba(17, 19, 31, 0)),
+                url(../images/hero/hero-desk-big.jpg);
+    }
+    
+        @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+        screen and (min-resolution: 2dppx) and (min-width: 1440px),
+        screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+            .hero {
+                background-image: linear-gradient(to top, rgba(17, 19, 31, 0.8), rgba(17, 19, 31, 0.31), rgba(17, 19, 31, 0)),
+                    url(../images/hero/hero-desk-big@2x.jpg);
+            }
+        }
 }
