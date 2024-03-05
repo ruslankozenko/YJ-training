@@ -743,4 +743,12 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
         }
 
         /* ============== /DESKTOP ABOUT ============== */
+
+        /* ============== DESKTOP OUR YACHTS ============== */
+
+        .conteiner-our-yachts {
+            max-width: 1240px;
+        }
+
+        /* ============== /DESKTOP OUR YACHTS ============== */
 }
