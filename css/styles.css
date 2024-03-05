@@ -241,11 +241,11 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
 /* ============== MOBILE OUR YACHTS ============== */
 
-.position-benetti {
+.card-benetti {
     display: none;
 }
 
-.position-belle {
+.card-belle {
     display: none;
 }
 
@@ -255,10 +255,12 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
 .conteiner-our-yachts {
     max-width: 335px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .our-yachts-title {
+    max-width: 314px;
     font-weight: 500;
     font-size: 28px;
     line-height: 1;
@@ -266,14 +268,11 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     text-align: center;
     color: #fbfbfb;
     margin-bottom: 40px;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .our-yachts-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background: #fbfbfb;
     border-radius: 24px;
 }
@@ -288,10 +287,8 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
 .list-item-yachts {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 125px;
     padding-bottom: 16px;
     position: relative;
 }
@@ -328,47 +325,38 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
 .yachts-prices {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 114px;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 16px;
 }
 
 .yacht-prices-menu {
     display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-direction: column;
-        gap: 6px;
+    flex-direction: column;
+    gap: 6px;
 }
 
 .item-label {
-    
-        font-weight: 400;
-        font-size: 14px;
-    
-        
-        line-height: 1.18;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #040306;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #040306;
 }
 
 .yacht-prices-list {
     display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        flex-direction: column;
-        gap: 6px;
+    flex-direction: column;
+    gap: 6px;
 }
 
 .item-prices {
-        font-weight: 400;
-        font-size: 14px; 
-        line-height: 1.18;
-        letter-spacing: 0.03em;
-        color: #040306;
+    font-weight: 400;
+    font-size: 14px; 
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: #040306;
 }
 
 .yachts-link-send {
@@ -380,18 +368,18 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
 .our-jachts-sending {
     display: flex;
-        font-weight: 500;
-        font-size: 14px; 
-        line-height: 1.28;
-        letter-spacing: -0.02em;
-        color: #fbfbfb;
-        padding-left: 32px;
-        padding-top: 16px;
-        gap: 10px;
-            border: 1px solid rgba(251, 251, 251, 0.35);
-            border-radius: 15px;
-            width: 141px;
-            height: 46px;
+    font-weight: 500;
+    font-size: 14px; 
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    color: #fbfbfb;
+    padding-left: 32px;
+    padding-top: 14px;
+    gap: 10px;
+    border: 1px solid rgba(251, 251, 251, 0.35);
+    border-radius: 15px;
+    width: 141px;
+    height: 46px;
 }
 
 /* ============== /MOBILE OUR YACHTS ============== */
@@ -404,7 +392,8 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
     .page-header {
         max-width: 704px;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
         top: 32px;   
     }
 
@@ -554,6 +543,62 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     }
 
         /* ============== /TABLET ABOUT ============== */
+
+        /* ============== TABLET OUR YACHTS ============== */
+
+    .card-benetti {
+        display: list-item;
+    }
+
+    .conteiner-our-yachts {
+        max-width: 704px;
+    }
+
+    .our-yachts-title {
+        font-size: 48px;
+        margin-bottom: 75px;
+        max-width: 645px;
+    }
+
+    .our-yachts-list {
+       display: inline-flex;
+       gap: 32px;
+       background: none;
+    }
+
+    .our-yachts-item {
+       border-radius: 24px;
+       background: #fbfbfb;
+    }
+
+    .yacht-name {
+        font-size: 16px;
+        line-height: 1.2;
+        width: 147px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .yacht-option-text {
+        font-size: 13px;
+        line-height: 1.18;
+    }
+
+    .yachts-link-send {
+        padding-top: 50px;
+        padding-bottom: 75px;
+    }
+
+    .our-jachts-sending {
+        width: 179px;
+        height: 52px;
+        padding-left: 40px;
+        padding-top: 16px;
+        font-size: 18px;
+        line-height: 1.1;
+    }
+     /* ============== /TABLET OUR YACHTS ============== */
 }
 
 @media screen and (min-width: 1280px) {
@@ -627,8 +672,27 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
        
     }
 
-
     /* ============== /DESKTOP ABOUT ============== */
+
+    /* ============== /DESKTOP OUR YACHTS ============== */
+
+    .card-belle {
+        display: list-item;
+    }
+
+    .our-yachts-section {
+        padding-top: 150px;
+    }
+
+    .conteiner-our-yachts {
+        max-width: 1181px;
+    }
+
+    .our-yachts-title {
+        max-width: 714px;
+    }
+
+    /* ============== DESKTOP OUR YACHTS ============== */
 }
 
 @media screen and (min-width: 1440px) {
