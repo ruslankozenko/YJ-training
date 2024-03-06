@@ -384,6 +384,62 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
 /* ============== /MOBILE OUR YACHTS ============== */
 
+/* ============== MOBILE ADVANTAGES ============== */
+
+.section-advantages {
+    max-width: 335px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-advantages {
+    border-radius: 24px;
+    background: #1b414b;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    height: 642px;
+}
+
+.advantages-list {
+    padding: 80px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.list-number-advantages {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: #fbfbfb;
+    padding-bottom: 18px;
+    border-bottom: 2px solid rgba(251, 251, 251, 0.1);
+}
+
+.text-advantages {
+    font-weight: 400;
+    font-size: 12px; 
+    line-height: 1.16;
+    letter-spacing: -0.02em;
+    color: #fbfbfb;
+    opacity: 0.8;
+    padding-top: 18px;
+}
+
+.advantages-item {
+    width: 295px;
+    height: 94px;
+}
+
+.about-image-yacht {
+    border-radius: 24px;
+    width: 335px;
+    height: 424px;
+}
+
+/* ============== /MOBILE ADVANTAGES ============== */
+
 @media screen and (min-width: 768px) {
 
     .mobile-menu-open-btn {
