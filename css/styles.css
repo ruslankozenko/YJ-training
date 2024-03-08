@@ -391,28 +391,27 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     padding-bottom: 40px;
 }
 
-.advantages-general {
-    max-width: 335px;
+ .container-advantages{
+    max-width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.container-advantages {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    border-radius: 24px;
-    background: #1b414b;
-    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
+
 
 .advantages-list {
     padding: 80px 20px;
     display: flex;
     flex-direction: column;
     gap: 40px;
-    max-height: 642px;
+    background-color: #1b414b;
+    border-radius: 24px;
 }
 
 .list-number-advantages {
@@ -625,7 +624,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
     .our-yachts-list {
        display: inline-flex;
-       gap: 25px;
+       gap: 32px;
        background: none;
     }
 
@@ -670,12 +669,11 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
         padding-bottom: 75px;
     }
 
-    .advantages-general {
-        max-width: 704px;
-    }
-
      .container-advantages {
-        margin-bottom: 32px;
+        max-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+        gap: 32px;
      }
 
      .advantages-item {
@@ -698,11 +696,6 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
         line-height: 1.15;
      }
      
-     .about-image-yacht {
-        width: 704px;
-        height: 424px;
-     }
-
      /* ============== /TABLET ADVANTAGES ============== */
 }
 
@@ -797,29 +790,27 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
         max-width: 714px;
     }
 
+    .our-yachts-list {
+        gap: 25px;
+    }
+
     /* ============== /DESKTOP OUR YACHTS ============== */
 
     /* ============== DESKTOP ADVANTAGES ============== */
 
-    .section-advantages {
-       
-    }
-
     .container-advantages {
-        
+        max-width: 1280px;
+        display: flex;
+        flex-direction: row;
     }
 
     .advantages-list {
         padding: 90px 50px;
+        gap: 44px;
     }
 
     .advantages-item {
-        
-    }
-
-    .about-image-yacht {
-        width: 432px;
-        height: 424px;
+        width: 292px;
     }
 
     /* ============== /DESKTOP ADVANTAGES ============== */
@@ -881,4 +872,21 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
         }
 
         /* ============== /DESKTOP OUR YACHTS ============== */
+
+        /* ============== DESKTOP ADVANTAGES ============== */
+
+        .container-advantages {
+            max-width: 1440px;
+        }
+
+        .advantages-item {
+            width: 318px;
+        }
+
+        .advantages-list {
+            width: 768px;
+            gap: 44px 32px;
+        }
+
+        /* ============== DESKTOP ADVANTAGES ============== */
 }
