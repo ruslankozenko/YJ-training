@@ -456,7 +456,104 @@
         </div>
       </section>
 
-      <!------ /Advantages	------>
+      <!------ /Advantages ------>
+
+      <!------ Rant a yacht ------>
+      <section class="rant-section" id="rant">
+        <div class="conteiner-rant">
+          <div class="review-form">
+            <h2 class="rant-title">Rent a yacht now</h2>
+            <form
+              class="rant-contact-form"
+              name="contact-form"
+              autocomplete="off"
+            >
+              <div class="rant-input">
+                <input
+                  class="rant-contact-input"
+                  type="text"
+                  id="user-name"
+                  name="user-name"
+                  pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
+                  title="Kozenko Ruslan"
+                  placeholder="Full Name"
+                  required
+                />
+              </div>
+              <div class="rant-input">
+                <input
+                  class="rant-contact-input"
+                  type="email"
+                  id="user-email"
+                  name="user-email"
+                  title="kozenko@gmail.com"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="rant-input">
+                <input
+                  class="rant-contact-input"
+                  type="tel"
+                  id="user-tel"
+                  name="user-tel"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                  title="xxx-xxx-xx-xx"
+                  placeholder="Phone number"
+                  required
+                />
+              </div>
+              <div class="rant-form-wrapper">
+                <textarea
+                  class="review-form-comment"
+                  id="user-comment"
+                  name="user-comment"
+                  placeholder="Comment"
+                  required
+                ></textarea>
+              </div>
+              <button class="review-form-submit-btn" type="submit">Send</button>
+            </form>
+          </div>
+          <div class="rant-picture">
+            <picture class="rant-photo">
+              <source
+                srcset="
+                  ./images/rant/rant-desk-big.jpg    1x,
+                  ./images/rant/rant-desk-big@2x.jpg 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="
+                  ./images/rant/rant-desk.jpg    1x,
+                  ./images/rant/rant-desk@2x.jpg 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/rant/rant-tab.jpg    1x,
+                  ./images/rant/rant-tab@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/rant/rant-mob.jpg    1x,
+                  ./images/rant/rant-mob@2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./images/rant/rant-mob.jpg"
+                alt="rant-yacht"
+                class="about-rant-yacht"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
