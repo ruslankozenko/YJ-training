@@ -444,6 +444,58 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
 /* ============== /MOBILE ADVANTAGES ============== */
 
+/* ============== MOBILE RANT A JACHT ============== */
+
+.rant-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.conteiner-rant {
+    max-width: 335px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rant-contact-form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 18px;
+    padding-bottom: 80px;
+}
+
+.rant-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #fbfbfb;
+    padding-bottom: 40px;
+}
+
+.rant-input {
+    display: flex;
+   flex-direction: column;
+   width: 335px;
+}
+
+.rant-contact-input {
+    font-weight: 400;
+    font-size: 12px; 
+    line-height: 1.16;
+    color: rgba(251, 251, 251, 0.4);
+    background-color: transparent;
+    border: 1px solid rgba(251, 251, 251, 0.2);
+    border-radius: 12px;
+    padding: 14px 261px 14px 18px;
+    height: 42px;
+}
+
+/* ============== /MOBILE RANT A JACHT ============== */
+
+
 @media screen and (min-width: 768px) {
 
     .mobile-menu-open-btn {
