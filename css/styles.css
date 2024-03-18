@@ -501,18 +501,16 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 }
 
 .rant-form-wrapper {
-    display: flex;
-    width: 100%;
     padding-bottom: 40px;
+    width: 100%;
 }
 
 .review-form-comment {
     display: flex;
     border: 1px solid rgba(251, 251, 251, 0.2);
     border-radius: 12px;
-    padding-left: 18px;
-    padding-top: 14px;
-    width: 335px;
+    padding: 14px 18px;
+    width: 100%;
     height: 108px;
     background-color: transparent;
     font-weight: 400;
@@ -521,6 +519,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     color: rgba(251, 251, 251, 0.4);
     transition: border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     outline: 0px solid transparent;
+    resize: none;
 }
 
 .review-form-comment:hover {
@@ -805,6 +804,51 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
      }
      
      /* ============== /TABLET ADVANTAGES ============== */
+
+     /* ============== TABLET RANT A JACHT ============== */
+
+     .rant-section {
+        padding-top: 75px;
+        padding-bottom: 75px;
+     }
+
+     .conteiner-rant {
+        max-width: 473px;
+     }
+
+     .rant-title {
+        font-size: 48px;
+        padding-bottom: 50px;
+     }
+
+     .rant-contact-input {
+        padding: 18px;
+        height: 54px;
+        font-size: 14px;
+        line-height: 1.28
+     }
+
+     .rant-picture {
+        display: flex;
+        justify-content: center;
+     }
+
+     .review-form-comment {
+        height: 116px;
+        padding: 18px;
+        font-size: 14px;
+        line-height: 1.28
+     }
+
+     .review-form-submit-btn {
+        padding: 18px 75px;
+        max-width: 194px;
+        height: 56px;
+        font-size: 18px;
+        line-height: 1.1;
+     }
+
+     /* ============== /TABLET RANT A JACHT ============== */
 }
 
 @media screen and (min-width: 1280px) {
