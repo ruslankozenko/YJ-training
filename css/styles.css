@@ -462,7 +462,6 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    gap: 18px;
     padding-bottom: 80px;
 }
 
@@ -478,7 +477,8 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 .rant-input {
     display: flex;
    flex-direction: column;
-   width: 335px;
+   width: 100%;
+   padding-bottom: 18px;
 }
 
 .rant-contact-input {
@@ -489,8 +489,66 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     background-color: transparent;
     border: 1px solid rgba(251, 251, 251, 0.2);
     border-radius: 12px;
-    padding: 14px 261px 14px 18px;
+    padding: 14px 18px;
     height: 42px;
+    transition: border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    outline: 0px solid transparent;
+}
+
+.rant-contact-input:hover {
+     border: 1px solid rgba(251, 251, 251, 0.5);
+     color: #fbfbfb;
+}
+
+.rant-form-wrapper {
+    display: flex;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.review-form-comment {
+    display: flex;
+    border: 1px solid rgba(251, 251, 251, 0.2);
+    border-radius: 12px;
+    padding-left: 18px;
+    padding-top: 14px;
+    width: 335px;
+    height: 108px;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 12px; 
+    line-height: 1.16;
+    color: rgba(251, 251, 251, 0.4);
+    transition: border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    outline: 0px solid transparent;
+}
+
+.review-form-comment:hover {
+    border: 1px solid rgba(251, 251, 251, 0.5);
+    color: #fbfbfb;
+}
+
+.review-form-submit-btn {
+    font-weight: 500;
+    font-size: 14px; 
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    color: #fbfbfb;
+    border-radius: 15px;
+    padding: 14px 44px;
+    max-width: 122px;
+    height: 46px;
+    background: #1b414b;
+    border: transparent;
+}
+
+.review-form-submit-btn:hover {
+    background-color: #fbfbfb;
+    color: #1b414b;
+}
+
+.about-rant-yacht {
+    border-radius: 24px;
 }
 
 /* ============== /MOBILE RANT A JACHT ============== */
