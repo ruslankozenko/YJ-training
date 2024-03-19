@@ -935,7 +935,8 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     }
 
     .conteiner-our-yachts {
-        max-width: 1181px;
+        max-width: 1180px;
+        
     }
 
     .our-yachts-title {
@@ -966,6 +967,25 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     }
 
     /* ============== /DESKTOP ADVANTAGES ============== */
+
+    /* ============== DESKTOP RANT A JACHT ============== */
+
+    .conteiner-rant {
+        max-width: 1280px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding-left: 32px;
+        padding-right: 32px;
+        gap: 50px;
+    }
+
+    .rant-contact-form {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    /* ============== /DESKTOP RANT A JACHT ============== */
 }
 
 @media screen and (min-width: 1440px) {
@@ -1029,6 +1049,9 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
         .container-advantages {
             max-width: 1440px;
+            justify-content: space-between;
+            padding-left: 50px;
+            padding-right: 50px;
         }
 
         .advantages-item {
@@ -1041,4 +1064,22 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
         }
 
         /* ============== DESKTOP ADVANTAGES ============== */
+
+        /* ============== DESKTOP RANT A JACHT ============== */
+
+        .conteiner-rant {
+            max-width: 1440px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .rant-input {
+            width: 472px;
+        }
+
+        .rant-form-wrapper {
+            width: 472px;
+        }
+
+        /* ============== /DESKTOP RANT A JACHT ============== */
 }
