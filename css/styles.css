@@ -576,17 +576,13 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 }
 
 .reviews-title {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
     font-weight: 500;
     font-size: 28px;
     line-height: 1;
     letter-spacing: -0.02em;
     text-align: center;
     color: #fbfbfb;
-    padding-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 .reviews-text {
@@ -597,7 +593,10 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     text-align: center;
     color: #fbfbfb;
     opacity: 0.4;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
+    max-width: 335px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .reviews-list-item {
@@ -932,6 +931,42 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
      }
 
      /* ============== /TABLET RANT A JACHT ============== */
+
+     /* ============== TABLET REVIEWS ============== */
+
+     .reviews-photo-1 {
+        display: block;
+     }
+
+     .reviews-section {
+        padding-top: 75px;
+        padding-bottom: 75px;
+     }
+
+     .conteiner-reviews {
+        max-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+     }
+
+     .reviews-title {
+        font-size: 48px;
+        max-width: 704px;
+     }
+
+     .reviews-text {
+        font-size: 14px;
+        line-height: 1.28;
+        max-width: 571px;
+        margin-bottom: 75px;
+     }
+
+     .reviews-list {
+        display: flex;
+        gap: 32px;
+     }
+
+     /* ============== /TABLET REVIEWS ============== */
 }
 
 @media screen and (min-width: 1280px) {
@@ -1069,6 +1104,34 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     }
 
     /* ============== /DESKTOP RANT A JACHT ============== */
+
+    /* ============== DESKTOP REVIEWS ============== */
+
+    .reviews-photo-2 {
+        display: block;
+    }
+
+    .conteiner-reviews {
+        max-width: 1280px;
+    }
+
+    .reviews-title {
+        max-width: 854px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .reviews-list {
+        justify-content: space-between;
+    }
+
+    .reviews-list-item {
+        padding: 32px 28px;
+        width: 376px;
+        height: 282px;
+    }
+
+    /* ============== /DESKTOP REVIEWS ============== */
 }
 
 @media screen and (min-width: 1440px) {
@@ -1165,4 +1228,12 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
         }
 
         /* ============== /DESKTOP RANT A JACHT ============== */
+
+        /* ============== DESKTOP REVIEWS ============== */
+
+        .conteiner-reviews {
+            max-width: 1240px;
+        }
+
+        /* ============== /DESKTOP REVIEWS ============== */
 }
