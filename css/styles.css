@@ -143,35 +143,35 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 }
 
 .main-title {
-        font-weight: 500;
-        font-size: 32px;
-        margin-bottom: 24px;
-        line-height: 1;
-        letter-spacing: -0.02em;
-        text-align: center;
-        color: #fbfbfb;
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 24px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fbfbfb;
 }
 
 .hero-text {
-        font-weight: 300;
-        font-size: 12px;
-        height: 56px;
-        line-height: 1.16;
-        text-align: center;
-        color: rgba(251, 251, 251, 0.7);
-        margin-bottom: 38px;
+    font-weight: 300;
+    font-size: 12px;
+    height: 56px;
+    line-height: 1.16;
+    text-align: center;
+    color: rgba(251, 251, 251, 0.7);
+    margin-bottom: 38px;
 }
 
 .hero-link-send {
     display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-direction: row;
-        gap: 10px;
-        border-radius: 15px;
-            padding: 14px 32px;
-            width: 141px;
-            height: 46px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 15px;
+    padding: 14px 32px;
+    width: 141px;
+    height: 46px;
     background: #1b414b;
 }
 
@@ -495,7 +495,8 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     outline: 0px solid transparent;
 }
 
-.rant-contact-input:hover {
+.rant-contact-input:hover,
+.rant-contact-input:focus {
      border: 1px solid rgba(251, 251, 251, 0.5);
      color: #fbfbfb;
 }
@@ -522,7 +523,8 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     resize: none;
 }
 
-.review-form-comment:hover {
+.review-form-comment:hover,
+ .review-form-comment:focus {
     border: 1px solid rgba(251, 251, 251, 0.5);
     color: #fbfbfb;
 }
@@ -541,7 +543,8 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     border: transparent;
 }
 
-.review-form-submit-btn:hover {
+.review-form-submit-btn:hover,
+.review-form-submit-btn:focus {
     background-color: #fbfbfb;
     color: #1b414b;
 }
@@ -660,8 +663,6 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     font-size: 14px;
     letter-spacing: -0.03em;
     color: #fbfbfb;
-    width: 52px;
-    height: 18px;
 }
 
 .footer-menu {
@@ -681,6 +682,16 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     background: rgba(251, 251, 251, 0.3);
 }
 
+.footer-item:hover,
+.footer-item:focus {
+    background: #fbfbfb;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    color: #1b414b;
+}
+
 .footer-link {
     font-weight: 400;
     font-size: 9px; 
@@ -694,23 +705,26 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 }
 
 .social-footer {
-    max-width: 88px;
+   max-width: 88px;
    margin-left: auto;
    margin-right: auto;
    margin-top: 42px;
-    margin-bottom: 42px;
+   margin-bottom: 42px;
 }
 
 .social-footer-list {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
     gap: 8px;
 }
 
-.social-list-icon {
+.social-list-icon-footer {
     fill: #fbfbfb;
+    transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list-icon-footer:hover,
+.social-list-icon-footer:focus {
+    fill: rgba(251, 251, 251, 0.8);
 }
 
 .text-footer {
@@ -731,12 +745,12 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
 .footer-copyright-list {
     display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-direction: row;
-        gap: 20px;
-        padding-left: 53px;
-            padding-right: 53px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 20px;
+    padding-left: 53px;
+    padding-right: 53px;
 }
 
 .footer-copyright-list-item {
@@ -1082,6 +1096,75 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
      }
 
      /* ============== /TABLET REVIEWS ============== */
+
+     /* ============== TABLET FOOTER ============== */
+
+     .yachtjet-footer {
+        padding-top: 75px;
+     }
+
+     .conteiner-footer {
+        max-width: 736px;
+        height: 418px;
+     }
+
+     .navigation-footer-list {
+        display: flex;
+        padding: 50px;
+        margin-bottom: 46px;
+     }
+
+     .footer-navigation {
+        gap: 106px;
+        padding: 0;
+     }
+
+     .social-footer {
+        margin: 0 0 0 auto;
+     }
+
+     .logo-footer {
+        font-size: 20px;
+     }
+
+     .footer-menu {
+        width: 281px;
+        height: 40px;
+     }
+
+     .footer-item {
+        width: 91px;
+        height: 40px;
+     }
+
+     .footer-link {
+        padding: 15px 25px;
+     }
+
+     .text-footer {
+        margin-bottom: 99px;
+     }
+
+     .main-text-footer {
+        font-size: 32px;
+        max-width: 640px;
+     }
+
+     .footer-extra {
+        display: flex;
+        justify-content: space-evenly;
+     }
+
+     .footer-copyright-list {
+        gap: 32px;
+     }
+
+     .footer-copyright-list-item {
+        font-size: 14px;
+        line-height: 1.18;
+     }
+
+     /* ============== /TABLET FOOTER ============== */
 }
 
 @media screen and (min-width: 1280px) {
