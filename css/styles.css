@@ -1330,6 +1330,26 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     }
 
     /* ============== /DESKTOP REVIEWS ============== */
+
+    /* ============== DESKTOP FOOTER ============== */
+
+    .conteiner-footer {
+        max-width: 1230px;
+    }
+
+    .navigation-footer-list {
+        padding: 50px 75px;
+    }
+
+    .footer-navigation {
+        gap: 326px;
+    }
+
+    .main-text-footer {
+        max-width: 693px;
+    }
+
+    /* ============== /DESKTOP FOOTER ============== */
 }
 
 @media screen and (min-width: 1440px) {
@@ -1434,4 +1454,20 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
         }
 
         /* ============== /DESKTOP REVIEWS ============== */
+
+        /* ============== DESKTOP FOOTER ============== */
+
+        .conteiner-footer {
+            max-width: 1390px;
+        }
+
+        .footer-navigation {
+            gap: 409px;
+        }
+
+        .main-text-footer {
+            max-width: 699px;
+        }
+
+        /* ============== /DESKTOP FOOTER ============== */
 }
